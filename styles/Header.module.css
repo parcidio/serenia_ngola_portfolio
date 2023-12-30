@@ -1,0 +1,49 @@
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adjusted gap for smaller screens */
+    padding: 15px 0; /* Adjusted padding for smaller screens */
+    border-bottom: 2px solid;
+    border-color: var(--white);  
+    width: 100%;
+}
+
+.header__text {   
+    text-align: center;   
+}
+
+.header__text small {
+    font-weight: thin;
+    font-size: 14pt; /* Adjusted font size for smaller screens */
+}
+
+.header__text h1 {
+    font-weight: bolder;
+    font-size: 24pt; /* Adjusted font size for smaller screens */
+}
+
+.header__image {
+    object-position: 50% 50%; /* Center the object position */
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .header__container {
+        gap: 10px; /* Further reduce gap for smaller screens */
+        padding: 10px 0; /* Further reduce padding for smaller screens */
+    }
+
+    .header__text small {
+        font-size: 12pt; /* Further reduce font size for smaller screens */
+    }
+
+    .header__text h1 {
+        font-size: 20pt; /* Further reduce font size for smaller screens */
+    }
+}

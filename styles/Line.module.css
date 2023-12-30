@@ -1,0 +1,7 @@
+.line {
+    min-height: .3rem;
+    background: var(--pink);
+    border-radius: 2rem;
+    margin-block: 20px;
+   
+}

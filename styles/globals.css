@@ -1,0 +1,108 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    /* Colors */
+    --black: #0e0e0e;
+    --white: #FFFFFF;
+    --light: #F6F6F6;
+    --muted-text: #B1B1B1;
+    --gray: #2E2E2E;
+    --pink: #eb8b70;
+    --blue: #0D42AA;
+    --shadow: rgba(166, 166, 166, 0.5);
+    --light-gray: rgba(166, 166, 166, 0.5);
+    /* Screensize dimensions */
+    --container-width-lg: 75%;
+    --container-width-md: 75%;
+    --container-width-sm: 75%;
+    /* Transition */
+    --transition: all 400ms ease;
+    /* Font */
+}
+
+[theme="light"] {
+    /* Colors */
+    --black: #FFFFFF;
+    --white: #0e0e0e;
+    --light: #F6F6F6;
+    --muted-text: #B1B1B1;
+    --gray: #2E2E2E;
+    --pink: #FF93A0;
+    --blue: #0D42AA;
+    --purple: #a11b9c;
+    --light-gray: rgba(166, 166, 166, 0.5);
+    /* Screensize dimensions */
+    --container-width-lg: 75%;
+    --container-width-md: 75%;
+    --container-width-sm: 75%;
+    /* Transition */
+    --transition: all 400ms ease;
+    /* Font */
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Space Mono', monospace;
+    font-size: 11pt;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    /* hide the scrollbar */
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        --container-width-lg: 80%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    :root {
+        --container-width-md: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --container-width-sm: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: black;
+        background: var(--white);
+    }
+}

@@ -1,0 +1,35 @@
+.container {
+    padding-top: 10px; /* Adjusted padding for smaller screens */
+    padding-left: 1rem; /* Adjusted padding for smaller screens */
+    padding-right: 1rem; /* Adjusted padding for smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main {
+    /* display: flex; */
+    /* flex-direction: column; */
+    min-height: 100vh;
+    padding-left: 10%; /* Adjusted padding for smaller screens */
+    padding-right: 10%; /* Adjusted padding for smaller screens */
+    padding-top: 3%; /* Adjusted padding for smaller screens */
+    padding-bottom: 0;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding-top: 5px; /* Further reduce padding for smaller screens */
+        padding-left: 0.5rem; /* Reverting to the original value for smaller screens */
+        padding-right: 0.5rem; /* Reverting to the original value for smaller screens */
+    }
+
+    .main {
+        display: flex;
+        padding-left: 1%; /* Reverting to the original value for smaller screens */
+        padding-right: 1%; /* Reverting to the original value for smaller screens */
+        padding-top: 2%; /* Further reduce padding for smaller screens */
+    }
+}

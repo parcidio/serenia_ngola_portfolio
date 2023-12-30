@@ -1,0 +1,50 @@
+.about__container {
+    padding-bottom: 20px; /* Adjusted padding for smaller screens */
+    padding-top: 20px; /* Adjusted padding for smaller screens */
+}
+
+.about__container p {
+    line-height: 2rem; /* Adjusted line height for smaller screens */
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+    text-align: left;
+}
+
+.about__pargraph__underlined {
+    color: var(--muted-text);
+    border-bottom: 0.2rem solid; /* Adjusted border thickness for smaller screens */
+    padding-bottom: 0.1rem;
+    border-color: var(--muted-text);
+    text-decoration-thickness: 0.2rem;
+}
+
+.about__pargraph__underlined:hover {
+    border-color: var(--pink);
+    cursor: pointer;
+}
+
+.about__pargraph__readmore {
+    display: none;
+}
+
+.about__readMoreButton {
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .about__container {
+        padding-bottom: 1px; /* Further reduce padding for smaller screens */
+        padding-top: 1px; /* Further reduce padding for smaller screens */
+    }
+
+    .about__container p {
+        line-height: 1.8rem; /* Further adjusted line height for smaller screens */
+        font-size: 0.9rem; /* Further adjusted font size for smaller screens */
+    }
+
+    .about__pargraph__underlined {
+        border-bottom: 0.15rem solid; /* Further adjusted border thickness for smaller screens */
+        text-decoration-thickness: 0.15rem;
+    }
+}

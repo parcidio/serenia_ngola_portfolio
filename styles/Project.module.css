@@ -1,0 +1,76 @@
+.project {
+    width: 100%;
+    border: .1rem solid var(--black);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column; /* Mobile-first: Stack items vertically on small screens */
+}
+
+.project__description {
+    color: var(--black);
+    text-align: left;
+    max-height: 100px; /* Limit height to show only a portion of the text initially */
+    overflow: hidden; /* Hide overflow on initial display */
+    transition: max-height 0.5s ease; /* Smooth transition for height changes */
+}
+
+.project__button {
+    color: var(--white);
+    background: var(--pink);
+    padding: .5rem;
+    width: fit-content;
+    border: none;
+    border-radius: .5rem;
+    margin-block: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+.project__imageContainer {
+    margin-block: 1rem;
+}
+
+.project__toolList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    border-radius: .5rem;
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.project__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__progress {
+    padding: .5rem;
+    padding-block: 0;
+    border-radius: .5rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.project__toolList h5 {
+    padding: 5px;
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (min-width: 768px) {
+    .project {
+        flex-direction: row; /* On larger screens, display items horizontally */
+    }
+
+    .project__description {
+        max-height: none; /* Allow full height for description on larger screens */
+        overflow: visible; /* Display full content without overflow on larger screens */
+    }
+}

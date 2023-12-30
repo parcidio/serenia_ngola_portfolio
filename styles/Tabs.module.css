@@ -1,0 +1,29 @@
+.tabList {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-color: var(--light-gray);
+    border-radius: 1rem;
+    color: var(--muted-text);
+    font-weight: 700;
+}
+
+.tabList__tab__active {
+    background-color: var(--light-gray);
+    border-radius: .2rem;
+    color: var(--white);
+}
+
+
+/* .tabList__tab {
+    background-color: var(--light-gray);
+    padding: 8px 26px;
+    border-radius: .2rem;
+    cursor: pointer;
+    color: var(--muted-text);
+    font-weight: 700;
+} */

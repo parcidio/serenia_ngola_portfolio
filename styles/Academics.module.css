@@ -1,0 +1,40 @@
+.experience {
+    color: var(--black);
+}
+
+.experience h1 {
+    padding-bottom: 2rem;
+}
+
+.experience_container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.experience_container ul {
+    list-style: none;
+    line-height: 3rem;
+    padding: 0;
+   
+    
+}
+
+.experience_container ul li{
+    border-bottom: solid 1px black; 
+
+}
+
+.experience_container_institution {
+    color: var(--black);
+}
+
+.experience_container_period {
+    text-align: right;
+    color: var(--black);
+}
+
+.table_row{
+    border-bottom: solid 1px black;
+    
+}

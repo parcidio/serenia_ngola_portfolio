@@ -1,0 +1,50 @@
+.experience {
+    color: var(--black);
+}
+
+.experience h1 {
+    padding-bottom: 2rem;
+}
+
+.experience__container {
+    display: flex;
+    /* flex-direction: column; Adjusted for smaller screens */
+    gap: 3rem; /* Adjusted gap for smaller screens */
+    justify-content: space-between;
+}
+
+.experience__container ul {
+    list-style: none;
+    line-height: 2rem; /* Adjusted line height for smaller screens */
+    padding: 0;
+}
+
+.experience__container ul li {
+    border-bottom: solid 1px black;
+}
+
+.experience__container__institution,
+.experience__container__period {
+    color: var(--black);
+    text-align: s; /* Adjusted for smaller screens */
+}
+
+.experience__container__period {
+    text-align: right; /* Adjusted for smaller screens */
+}
+
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .experience__container {
+        gap: 0.5rem; /* Further reduced gap for smaller screens */
+    }
+
+    .experience__container ul {
+        line-height: 1.8rem; /* Further adjusted line height for smaller screens */
+    }
+}
+.table_row{
+    border-bottom: solid 1px black;
+    
+}

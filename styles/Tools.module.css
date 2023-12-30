@@ -1,0 +1,71 @@
+.tools {
+    padding: 0;
+    color: var(--white);
+}
+
+.tools_container {
+    padding-bottom: 2rem;
+}
+
+.tools__tabPanel {
+    display: flex;
+}
+
+.tools__tool {
+    margin: 1rem;
+    border-radius: 1rem;
+    filter: drop-shadow(16px 16px 20px var(--white)) invert(75%);
+}
+
+.tools__tool:hover {
+    filter: drop-shadow(16px 16px 20px purple);
+}
+
+.tools__tool:hover .tools__tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Tooltip container */
+
+.tools__tool {
+    position: relative;
+    display: inline-block;
+    /* If you want dots under the hoverable text */
+}
+
+
+/* Tooltip text */
+
+.tools__tool .tools__tooltip {
+    visibility: hidden;
+    width: 120px;
+    background: linear-gradient(45deg, red, #0D42AA, purple, #FF93A0);
+    color: var(--light);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 100;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tools__tool:hover .tools__tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}

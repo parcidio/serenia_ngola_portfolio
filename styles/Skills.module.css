@@ -1,0 +1,52 @@
+.skills {
+    color: var(--black);
+}
+
+.skills h1 {
+    padding-bottom: 2rem;
+}
+
+.skills__container {
+    display: flex;
+    gap: 3rem;
+}
+
+.skills__container  ul {
+    list-style: none;
+    line-height: 3rem;
+    padding: 10px;
+}
+
+.skills__with__progress{
+   display: flex;
+   flex-direction: column;
+}
+.skills__legend{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__container__card {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+}
+
+
+.skills__card{
+    border: solid 1px black;
+    border-radius:10px;
+    padding: 5px;
+    margin: 5px;
+   
+}
+.skills__container__period {
+    text-align: right;
+    color: var(--black);
+}
+
+.skills__container__role{
+    width: 100%;
+}
+
