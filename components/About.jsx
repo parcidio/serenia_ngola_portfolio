@@ -20,7 +20,7 @@ const About = () => {
       </p>
       <p>
         {" "}
-        Sou apaixonado por design, pesquisa e tecnologia, e como eles podem convergir para criar experiências que resolvam problemas. Atualmente, estou buscando expandir minha atuação no desenvolvimento web por meio de colaboração com outros profissionais da indústria.
+        Sou apaixonado por design, pesquisa e tecnologia, e como eles podem convergir para criar experiências que resolvam problemas. Atualmente, estou buscando expandir minha atuação no desenvolvimento web por meio de colaboração com outros profissionais da indústria. 
       </p>
       
     </div>

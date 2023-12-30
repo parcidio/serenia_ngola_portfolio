@@ -19,7 +19,7 @@ const Header = () => {
      
       <div className={headerStyle.header__text}>
         <h1>Serenia Ngola</h1>
-        <small>Enginheira de TI</small>
+        <small>Engenheira de Informática</small>
       </div>
       <Nav />
     
